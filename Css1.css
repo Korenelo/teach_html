@@ -9,7 +9,7 @@
     right: 0;
 	height:2000px;
 	background:#FF4500;
-	border: solid 3px black; 
+	border: solid 3px black;
 	}
 .new_block2{
 	width:33%;
@@ -30,18 +30,19 @@
 .new_block4 {
 	width:41%;
 	background:#808080;
+	position: relative;
 	}
 .new_block4:hover {
 	transition: all 0.7s ease;
-	background:#7FFF00;
+	background:#000080;
 	}
 .new_block5{
 	width:30%;
-	background:#20B2AA;
+	background: url("sss.png") repeat;
 	}
 .new_block5:hover{
-	transition: all 0.7s ease;
-	background:#008B8B;
+	transition: all 2s ease;
+	background: #000080
 	}
 .header_main{
 	margin: 0 auto;
@@ -53,8 +54,10 @@
 	background:linear-gradient(to right, red, green);
 	border: solid 3px black; 
 	transition: 2s;
+	top: 10;
 	left: 0;
     right: 0;
+    z-index: 99999;
 	}
 .header_main:hover{
 	background:green;
@@ -113,4 +116,42 @@
 	width: 140px;
 	height:140px;
 	transition: 3s;
+}
+.inblock_1, .inblock_2{
+	text-align: center;
+	border-radius: 50px;
+	height: 400px;
+	border: solid 3px black;
+	width: 150px;
+	background: #8B008B;
+	display: inline-block;
+	width: 47%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.inblock_2{
+	background: #191970;
+}
+.inblock_3{
+	background: #C71585;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	border: solid 3px black;
+	position: absolute;
+	left: 40%;
+	top: 3%;
+	overflow: hidden;
+}
+.new_block4 span{
+	color: red;
+}
+.new_block4 p{
+	color: orange;
+	margin: 0;
+	padding: 0;
+}
+.new_block4 p:nth-child(odd){
+	color: #2E8B57;
+	text-transform: uppercase;
 }
